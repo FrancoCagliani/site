@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Tu Título</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <!--Header (Linea 53 en CSS)-->
+    <header>
+        <nav>
+            <div class="logo" alt="logo-shortly"></div>
+            <img src="/images/franco-logo.png" alt="logo">
+            <img class="logo-burger" src="/images/bars-solid.svg" alt="logo-burger">
+            <ul>
+                <li>Porfolio</li>
+                <li>Sobre mí</li>
+                <li>Contacto</li>
+            </ul>
+            <div class="login-signup">
+            </div>
+        </nav> 
+    </header> 
+    
+    <!--Main (Linea 126 en CSS)-->
+    <main>
+        <div class="container ">
+            <!-- Contenido superior de color blanco -->
+            <div class="top-section ">
+                <div class="hero">
+                    <div class="hero-content">
+                        <img class="img2" src="/images/Avatar-franco.png" alt="illustration-working2">
+                        <div class="hero-text">
+                            <h1>¡Hola! Soy Franco Cagliani</h1>
+                            <p>Bienvenido a mi sitio web</p>
+                        </div>
+                        <img class="img1" src="/images/Avatar-franco.png" alt="illustration-working">
+                    </div>
+                </div>
+            </div> 
+
+            <!-- Contenido inferior de color gris (Linea 332 en CSS) -->
+            <div class="down-section bg-light p-4">
+                <h1>PORFOLIO</h1>
+                <div class="images">
+                    <figure class="box1">
+                        <a href="https://github.com/FrancoCagliani/1_Lemon-Pie-Optativa-"><img src="/images/lemon-pie.jpeg" alt="icon-brand-recognition"></a>
+                        <figcaption>
+                            <p>Leemon pie.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="box2">
+                        <a href="https://github.com/FrancoCagliani/CVBatman"><img src="/images/CVBatman.png" alt="icon-detailed-records"></a>
+                        <figcaption>
+                            <p>CV Batman</p> 
+                        </figcaption>
+                    </figure>
+                    <figure class="box3">
+                        <a href="https://github.com/FrancoCagliani/TP3-Batmanv3"><img src="/images/super.png" alt="icon-fully-customizable"></a>
+                        <figcaption>
+                            <p>Súpers</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="box3">
+                        <a href="https://github.com/FrancoCagliani/TP4-PetShop"><img src="/images/petshop.jpeg" alt="icon-brand-recognition"></a>
+                        <figcaption>
+                            <p>Pet Shop</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="box2">
+                        <a href="https://github.com/FrancoCagliani/Pizzeria-v2"><img src="/images/piza.jpeg" alt="icon-brand-recognition"></a>
+                        <figcaption>
+                            <p>Pizzería</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="box1">
+                        <img src="/images/gameshop.jpeg" alt="icon-brand-recognition">
+                        <figcaption>
+                            <p>Game Shop</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="sobre-mi">
+                <h1>Sobre mí</h1>
+                <p>Soy estudiante del Profesorado de Computación. <br> Me gustan mucho los alfajores, chocolates, y masitas pero sobre todo las facturas :D <br>
+                Si deseas donar o conoces algun trabajito por favor no olvides contactarme</p>
+                <button>Descargar CV</button>
+            </div>
+
+            <div class="footer-main bg-light p-4">
+                <h1 class="text-dark">Contáctame</h1>
+            </div>
+            <form>
+                <div class="mb-3">
+                  <label for="nombre" class="form-label">Nombre Completo:</label>
+                  <input type="text" class="form-control" id="nombre" name="nombre">
+                </div>
+            
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email:</label>
+                  <input type="email" class="form-control" id="email" name="email">
+                  <div id="emailHelp" class="form-text">No compartiremos tu correo con nadie más.</div>
+                </div>
+            
+                <div class="mb-3">
+                  <label for="telefono" class="form-label">Número de Teléfono:</label>
+                  <input type="tel" class="form-control" id="telefono" name="telefono">
+                  <div id="emailHelp" class="form-text">No compartiremos tu teléfono con nadie más.</div>
+                </div>
+            
+                <div class="mb-3">
+                  <label for="mensaje" class="form-label">Mensaje:</label>
+                  <textarea class="form-control" id="mensaje" name="mensaje" rows="4"></textarea>
+                </div>
+            
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+
+    </main>
+
+    <!--Footer (Linea 486 en CSS)-->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/images/logo.svg" alt="Logo">
+            </div>
+            <ul class="footer-list">
+                <li class="footer-list-item">
+                    <h4>Mi lugar</h4>
+                    <ul class="sub-list">
+                        <li><a href="#">Calle N°: Uruguay 151</a></li>
+                        <li><a href="#">Ciudad: Santa Rosa - La Pampa</a></li>
+                    </ul>
+                </li>
+                <li class="footer-list-item">
+                    <h4>Sigamos conectados</h4>
+                    <div class="social-icons">
+                        <a href="#"><img src="/images/icon-facebook.svg" alt="Facebook"></a>
+                        <a href="#"><img src="/images/icon-twitter.svg" alt="Twitter"></a>
+                        <a href="#"><img src="/images/icon-pinterest.svg" alt="Pinterest"></a>
+                        <a href="#"><img src="/images/icon-instagram.svg" alt="Instagram"></a>
+                    </div>
+                </li>
+                <li class="footer-list-item">
+                    <h4>Sobre mí</h4>
+                    <ul class="sub-list">
+                        <h4>Soy una persona creativa y con ansias de aprender. <br> Tengo conocimientos de HTML, CSS y Bootstrap.</h4>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div class="copyright">
+            <p>Copyright © mi sitio 2023</p>
+        </div>
+    </footer>
+</body>
+</html>

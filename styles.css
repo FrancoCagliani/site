@@ -1,0 +1,655 @@
+/* Estilos específicos para tamaños de pantalla pequeños (por ejemplo, dispositivos móviles) */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; 
+    }
+
+    .hero {
+        padding: 20px; 
+    }
+
+    .feature-box {
+        width: 100%; 
+        margin: 10px 0;
+    }
+
+    .feature-box img {
+        max-width: 60px; 
+    }
+
+    .footer-list {
+        flex-direction: column; 
+    }
+    
+    .footer-list-item {
+        margin-bottom: 20px;
+    }
+
+    .shorten-link {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    .shorten-link input[type="text"] {
+        width: 100%; 
+        margin-right: 0; 
+    }
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+/*--------------Header (Linea 11 en HTML)--------------*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+.logo img {
+    max-width: 80px;
+    display: block;
+    margin: 20px auto;
+}
+
+.logo-burger {
+    display: none;
+}
+
+.login-signup {
+    margin-right: 0;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 645px) {
+    .logo-burger {
+        max-width: 10%;
+        position: relative;
+        right: auto;
+        height: auto; 
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        background-color: #fff;
+        width: 100%;
+    }
+
+    .logo {
+        position: left;
+    }
+
+    nav ul {
+        display: none; 
+    }
+
+    .login-signup {
+        display: none;
+    }
+}
+
+/*--------------Main (sección destacada de la web) (linea 29 HTML)--------------*/
+.hero {
+    padding: 100px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text p {
+    flex: 1;
+    padding-right: 20px;
+    font-size: 18px;
+}
+
+.hero-text h1 {
+    flex: 1;
+    padding-right: 20px;
+    font-size: 46px; 
+}
+
+.img1 {
+    width: 600px;
+    max-width: 100%;
+    display:block ;
+}
+
+.img2 {
+    display: none; 
+}
+
+.button-hero {
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    border: none;
+    padding: 20px 45px; 
+    border-radius: 55px; 
+    margin: 10px auto; 
+    display: block; 
+    text-align: center; 
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-text {
+        padding: 0;
+        text-align: center;
+    }
+
+    .img1 {
+        width: 100%;
+        display: none;
+    }
+
+    .img2 {
+        width: 100%;
+        display: block;
+    }
+    
+    .top-section {
+        width: 100%;
+        height: 50%;
+        background-color: #f4f4f4;
+    }
+    
+    .hero {
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .hero-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .hero-text h1 {
+        font-size: 36px; 
+        margin-bottom: 20px;
+    }
+    
+    .hero-text p {
+        font-size: 16px; 
+        line-height: 1.5;
+    }
+    
+    .button-hero {
+        padding: 10px 20px;
+        color: #fff;
+    }
+    
+}
+
+/*-------------- advanced-statistics (Parte del Main Linea 53 en HTML)--------------*/
+.advanced-statistics {
+    text-align: center; 
+}
+
+.advanced-statistics h2 {
+    margin: 0; 
+}
+
+.advanced-statistics p {
+    color: rgba(128, 128, 128, 0.75); /* Establece el color gris con 75% de opacidad al párrafo p */
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+ul li {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+button {
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-section {
+    width: 100%;
+    height: 50%;
+}
+
+.divider-center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #ccc;
+    margin: 0 auto;
+}
+
+/*--------------Parte del formulario (linea 47 en HTML)--------------*/
+.shorten-link2 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(257, 27%, 26%);
+    padding: 40px;
+    border-radius: 10px;
+    width: 80%; /* Increased width to 80% */
+    position: relative;
+    margin: 0 auto;
+}
+
+.shorten-link2 input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 15px;
+    flex: 1;
+}
+
+.shorten-link2 button {
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .shorten-link2 {
+        flex-direction: column; 
+        width: 100%; 
+        padding: 20px;
+    }
+
+    .shorten-link2 input {
+        width: 100%; 
+        margin: 10px; 
+    }
+    .shorten-link2 button {
+        width: 100%; 
+        margin: 10px; 
+    }
+}
+
+/*------- Down-section aquí estan el mensaje y las 3 imagenes (Linea 53 en HTML)-------*/
+.down-section {
+    background-color: hsl(257, 7%, 63%, 20%);
+    display: flex; 
+    align-items: center; 
+    flex-direction: column; 
+    padding: 100px;
+    margin-top: -55px;
+}
+
+.down-section h1 {
+    font-size: 36px; 
+    text-align: center; 
+    margin-bottom: 20px; 
+    color: #0f172a; 
+}
+
+.down-section p {
+    font-size: 18px; 
+    text-align: center; 
+    color: hsl(257, 7%, 63%); 
+}
+
+.images {
+    display: relative; 
+    justify-content: space-between; 
+    width: 1200px;
+    max-width: 100%; 
+    margin: 0 auto; 
+    position: left;
+}
+
+.images figure:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.images figure img {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.box1, .box2, .box3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    background-color: #fff;
+}
+
+/* Ajusta la propiedad margin-top para crear un efecto de escalera */
+.box1 {
+    margin-top: 0;
+}
+
+.box2 {
+    margin-top: 20px;
+}
+
+.box3 {
+    margin-top: 40px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.box1 img, .box2 img, .box3 img {
+    max-width: 100%;
+    padding: 1px;
+    border-radius: 100%;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 968px) {
+    .down-section {
+        padding: 50px; 
+        margin-top: 0; 
+    }
+
+    .down-section h1 {
+        font-size: 24px; 
+        margin-bottom: 10px;
+    }
+
+    .down-section p {
+        font-size: 16px; 
+    }
+
+    .images {
+        width: 100%; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .box1, .box2, .box3 {
+        margin-top: 20px; 
+        width: 100%; 
+        align-items: center; 
+    }
+
+    .box1 img, .box2 img, .box3 img {
+        padding: 15px; 
+    }
+
+    .box1, .box2, .box3 {
+        position: relative; 
+        margin-top: 20px; 
+        width: 100%; 
+    }
+
+    .box1, .box2, .box3 {
+        position: relative;
+        margin-top: 20px;
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-section {
+    width: 100%;
+    height: 50%;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin: 20px;
+    color: hsl(260, 8%, 14%)
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+img {
+    max-width: 100%;
+    margin: 0 10px;
+}
+
+
+
+/*-------------- Estilos para el footer (Linea 92 en HTML) --------------*/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    max-width: 100px;
+    
+}
+
+.footer-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-list-item {
+    margin-right: 30px;
+}
+
+.footer-list-item h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-list-item .sub-list li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sub-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #fff; 
+    opacity: 0.6;
+}
+
+.sub-list li {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-icons img {
+    max-width: 30px;
+}
+
+/* Estilo para las listas en filas */
+ul.sub-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+ul.sub-list li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; 
+        align-items: center; 
+        max-width: 100%; 
+        margin: 0 auto;
+    }
+
+    .footer-list {
+        flex-direction: column; 
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer-list-item {
+        margin-bottom: 20px; 
+    }
+
+    .sub-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        color: #fff; 
+        opacity: 0.6;
+    }
+
+    .sub-list li {
+        margin-bottom: 10px;
+    }
+
+    .social-icons {
+        margin-left: 10px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .social-icons img {
+        max-width: 30px;
+    }
+}
+
+.copyright p{
+    text-align: center;
+    color: #fff;
+}
+
+.sobre-mi {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.sobre-mi h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.sobre-mi p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sobre-mi button {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 0 auto;
+}
+
+.sobre-mi button:hover {
+background-color: #555;
+}
