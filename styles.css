@@ -653,3 +653,16 @@ ul.sub-list li {
 .sobre-mi button:hover {
 background-color: #555;
 }
+
+.tooltip-text {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+a:hover .tooltip-text {
+    display: block;
+}
